@@ -14,10 +14,17 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   display: flex;
+  max-height: 2400px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 80px;
+  background-image: url(images/bg-curve-desktop.svg);
+  /* background-position: top 30%; */
+  background-size: cover;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: center top 650px;
 }
 .fylo {
   align-self: flex-start;
@@ -47,9 +54,10 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 div > img {
-  max-width: 500px;
+  max-width: 600px;
 }
 h1 {
   font-family: "Raleway", sans-serif;
@@ -77,7 +85,7 @@ button:hover {
 }
 input {
   background-color: white;
-  padding: 11px 150px 11px 11px;
+  padding: 11px 60px 11px 11px;
   border: 1px solid rgb(78, 78, 78);
   color: rgb(129, 129, 129);
   border-radius: 4px;
@@ -89,4 +97,25 @@ input {
 }
 input:focus {
   background-color: hsla(224, 59%, 70%, 0.137);
+}
+.secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.greenlink {
+  color: rgb(45, 114, 72);
+  font-size: 1.2em;
+  text-decoration-line: underline;
+  text-underline-offset: 0.4em;
+}
+.greenlink::after {
+  content: url(images/icon-arrow.svg);
+  position: relative;
+  left: 5px;
+  top: 4px;
+}
+.greenlink:hover {
+  color: rgb(20, 63, 37);
 }
