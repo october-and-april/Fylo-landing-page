@@ -22,6 +22,7 @@ body {
   background-image: url(images/bg-curve-desktop.svg);
   /* background-position: top 30%; */
   background-size: cover;
+  background-size: 480% 100%;
   background-attachment: local;
   background-repeat: no-repeat;
   background-position: center top 650px;
@@ -41,6 +42,9 @@ body {
 }
 .deepnavi a {
   margin-left: 25px;
+}
+.deepnavi a:hover {
+  color: hsl(224, 93%, 58%);
 }
 .attribution {
   font-size: 11px;
@@ -85,7 +89,7 @@ button:hover {
 }
 input {
   background-color: white;
-  padding: 11px 60px 11px 11px;
+  padding: 11px 50px 11px 11px;
   border: 1px solid rgb(78, 78, 78);
   color: rgb(129, 129, 129);
   border-radius: 4px;
@@ -99,10 +103,12 @@ input:focus {
   background-color: hsla(224, 59%, 70%, 0.137);
 }
 .secondary {
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: -4em;
 }
 .greenlink {
   color: rgb(45, 114, 72);
@@ -118,4 +124,49 @@ input:focus {
 }
 .greenlink:hover {
   color: rgb(20, 63, 37);
+}
+.cloud {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px hsl(218deg 8% 83%);
+  margin: auto auto auto 10px;
+}
+.cloud::before {
+  content: url(images/icon-quotes.svg);
+}
+.cloud > p {
+  font-weight: 500;
+  font-size: 1em;
+}
+.kyle {
+  position: relative;
+  bottom: 38px;
+  left: 55px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -25px;
+}
+.kyle:first-of-type {
+  font-weight: 800;
+  font-size: 1em;
+}
+.pictrue {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+.founder {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.beforefooter {
+  background-color: hsl(238, 22%, 44%);
+  width: 100vw;
+  padding: 50px 80px 0 80px;
+  margin-top: 80px;
+  color: white;
 }
