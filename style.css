@@ -1,11 +1,92 @@
 * {
   box-sizing: border-box;
 }
-
+:root {
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
+body {
+  /* font-family: 'Raleway', sans-serif;     */
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 80px;
+}
+.fylo {
+  align-self: flex-start;
+}
+.navi {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  font-size: 1.4em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+}
+.deepnavi a {
+  margin-left: 25px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.initial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div > img {
+  max-width: 500px;
+}
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+button {
+  background-color: hsl(224, 93%, 58%);
+  padding: 12px 60px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95em;
+  font-weight: 600;
+  box-shadow: 3px 3px 6px hsl(218deg 8% 83%);
+}
+button:hover {
+  background-color: hsl(224, 78%, 64%);
+  transition: 0.6s;
+}
+input {
+  background-color: white;
+  padding: 11px 150px 11px 11px;
+  border: 1px solid rgb(78, 78, 78);
+  color: rgb(129, 129, 129);
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95em;
+  font-weight: 300;
+  margin-right: 18px;
+  box-shadow: 3px 3px 6px hsl(218deg 8% 83%);
+}
+input:focus {
+  background-color: hsla(224, 59%, 70%, 0.137);
 }
