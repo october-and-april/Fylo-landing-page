@@ -46,13 +46,6 @@ body {
 .deepnavi a:hover {
   color: hsl(224, 93%, 58%);
 }
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 .initial {
   display: flex;
   flex-direction: row;
@@ -72,7 +65,7 @@ h2 {
   font-size: 1.4em;
   font-weight: 400;
 }
-button {
+.bububutton {
   background-color: hsl(224, 93%, 58%);
   padding: 12px 60px;
   border: none;
@@ -83,11 +76,11 @@ button {
   font-weight: 600;
   box-shadow: 3px 3px 6px hsl(218deg 8% 83%);
 }
-button:hover {
+.bububutton:hover {
   background-color: hsl(224, 78%, 64%);
   transition: 0.6s;
 }
-input {
+.firstinput {
   background-color: white;
   padding: 11px 50px 11px 11px;
   border: 1px solid rgb(78, 78, 78);
@@ -99,7 +92,7 @@ input {
   margin-right: 18px;
   box-shadow: 3px 3px 6px hsl(218deg 8% 83%);
 }
-input:focus {
+.firstinput:focus {
   background-color: hsla(224, 59%, 70%, 0.137);
 }
 .secondary {
@@ -164,9 +157,117 @@ input:focus {
   font-size: 0.9em;
 }
 .beforefooter {
+  display: flex;
+  flex-direction: row;
   background-color: hsl(238, 22%, 44%);
   width: 100vw;
-  padding: 50px 80px 0 80px;
+  padding: 50px 80px 80px 80px;
   margin-top: 80px;
   color: white;
+}
+.tekst {
+  max-width: 850px;
+}
+.bubutton {
+  background-color: hsl(224, 93%, 58%);
+  padding: 12px 60px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95em;
+  font-weight: 600;
+}
+.second-input {
+  background-color: white;
+  padding: 11px 200px 11px 11px;
+  border: 1px solid rgb(78, 78, 78);
+  color: rgb(129, 129, 129);
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95em;
+  font-weight: 300;
+  margin-right: 18px;
+}
+.buttonstage {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 35px 0;
+  align-items: flex-start;
+}
+.bubutton:hover {
+  background-color: hsl(224, 78%, 64%);
+  transition: 0.6s;
+}
+.second-input:focus {
+  background-color: hsl(227, 39%, 93%);
+}
+.foot-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(243, 87%, 12%);
+  width: 100vw;
+  padding: 50px 80px 80px 80px;
+  color: white;
+}
+.firstitem {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.firstitem a::before {
+  content: url(images/icon-phone.svg);
+  margin-right: 10px;
+}
+.firstitem p::before {
+  content: url(images/icon-email.svg);
+  margin-right: 10px;
+}
+.firstitem::before {
+  content: url(images/logo-white.svg);
+  margin-bottom: 25px;
+  filter: ;
+}
+ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.menu-bottom {
+  margin-top: 69px;
+}
+.logomedia {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+a[class^="fa"] {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-top: 80px;
+  font-size: 22px;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+footer {
+  background-color: hsl(243, 87%, 12%);
+  width: 100vw;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.attribution a:hover {
+  color: hsl(238, 22%, 44%);
+  transition: 0.5s;
 }
